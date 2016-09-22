@@ -1,1 +1,13 @@
-/* CSS declarations go here */
+body {
+    margin-top: 60px;
+}
+
+.post {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: #efefef solid 1px;
+}
+
+.post:last-child {
+    border: 0;
+}
