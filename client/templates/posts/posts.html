@@ -24,17 +24,21 @@
         </div>
     </div>
     <hr>
+    {{#each posts}}
     <div class="post">
         <div class="media">
             <div class="media-left">
                 <a href="#">
-                    <img class="media-object" src="http://placehold.it/80" alt="...">
+                    <img class="media-object" src="{{getProfileImg userId}}">
                 </a>
             </div>
             <div class="media-body">
-                <small><strong>King Kunta</strong> <em>on 1-1-1111</em></small>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aperiam dolorem incidunt magni non nostrum, similique voluptas. Alias asperiores commodi consectetur dignissimos earum, enim libero maiores, nihil officia quasi voluptatem?</p>
+                <small><strong>{{username}}</strong> <em>on {{createdAt}}</em></small>
+                <p>{{body}}</p>
             </div>
         </div>
     </div>
+    {{else}}
+        <div class="well"><p class="text-center">No posts to display</p></div>
+    {{/each}}
 </template>

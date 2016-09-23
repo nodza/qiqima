@@ -11,3 +11,7 @@ body {
 .post:last-child {
     border: 0;
 }
+
+img {
+    width: 60px;
+}
